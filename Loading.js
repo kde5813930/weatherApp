@@ -5,7 +5,7 @@ import {StyleSheet, Text, View} from "react-native";
 export default function Loading() {
   return(
     <View style={styles.container}>
-      <Text>Getting the Wheather-App</Text>
+      <Text style={styles.text}>Getting the Wheather-App</Text>
     </View>
   );
 }
@@ -13,6 +13,14 @@ export default function Loading() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1
+    flex: 1,
+    justifyContent: "flex-end",
+    paddingHorizontal: 20,
+    paddingVertical: 100,
+    backgroundColor: "#fdf6aa"
+  },
+  text: {
+    color: "#2c2c2c",
+    fontSize: 30
   }
 })
