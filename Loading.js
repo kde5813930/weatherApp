@@ -5,8 +5,9 @@ import {StyleSheet, Text, View, StatusBar} from "react-native";
 export default function Loading() {
   return(
     <View style={styles.container}>
-      <StatusBar barStyle="dark-content"></StatusBar>
-      <Text style={styles.text}>Getting the Wheather-App</Text>
+      <StatusBar barStyle="white-content"></StatusBar>
+      <Text style={styles.text}>Wheather-App</Text>
+      <Text style={styles.text}>just for you😀</Text>
     </View>
   );
 }
@@ -15,13 +16,12 @@ export default function Loading() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "flex-end",
-    paddingHorizontal: 20,
-    paddingVertical: 100,
-    backgroundColor: "#fdf6aa"
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#42ddf5",
   },
   text: {
-    color: "#2c2c2c",
+    color: "white",
     fontSize: 30
   }
 })
